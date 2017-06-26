@@ -1,0 +1,4 @@
+com\info\TestRunner\MainTest.class
+com\info\pages\Registration.class
+com\info\TestBase\TestBase.class
+com\info\pages\Payment.class
