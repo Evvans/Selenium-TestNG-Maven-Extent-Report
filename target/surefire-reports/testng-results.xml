@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="2310" started-at="2017-06-24T19:04:59Z" finished-at="2017-06-24T19:05:01Z">
+  <suite name="Surefire suite" duration-ms="24234" started-at="2017-06-26T17:51:50Z" finished-at="2017-06-26T17:52:15Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="2310" started-at="2017-06-24T19:04:59Z" finished-at="2017-06-24T19:05:01Z">
-      <class name="com.info.TestBase.TestBase">
-        <test-method status="PASS" signature="Reportsetup()[pri:0, instance:com.info.TestBase.TestBase@1b64c45]" name="Reportsetup" is-config="true" duration-ms="2142" started-at="2017-06-25T00:34:57Z" finished-at="2017-06-25T00:34:59Z">
+    <test name="Surefire test" duration-ms="24234" started-at="2017-06-26T17:51:50Z" finished-at="2017-06-26T17:52:15Z">
+      <class name="com.info.TestRunner.MainTest">
+        <test-method status="PASS" signature="Reportsetup()[pri:0, instance:com.info.TestRunner.MainTest@12cbfa]" name="Reportsetup" is-config="true" duration-ms="2907" started-at="2017-06-26T23:21:14Z" finished-at="2017-06-26T23:21:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Reportsetup -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.info.TestBase.TestBase@1b64c45]" name="endTest" is-config="true" duration-ms="2245" started-at="2017-06-25T00:34:59Z" finished-at="2017-06-25T00:35:01Z">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.info.TestRunner.MainTest@12cbfa]" name="launchApp" is-config="true" duration-ms="33742" started-at="2017-06-26T23:21:17Z" depends-on-methods="com.info.TestBase.TestBase.Reportsetup" finished-at="2017-06-26T23:21:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="customer_Registraion()[pri:0, instance:com.info.TestRunner.MainTest@12cbfa]" name="customer_Registraion" duration-ms="21982" started-at="2017-06-26T23:21:50Z" finished-at="2017-06-26T23:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_Registraion -->
+        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@12cbfa]" name="getReport" is-config="true" duration-ms="675" started-at="2017-06-26T23:22:12Z" finished-at="2017-06-26T23:22:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_Registraion status=SUCCESS method=MainTest.customer_Registraion()[pri:0, instance:com.info.TestRunner.MainTest@12cbfa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReport -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.info.TestRunner.MainTest@12cbfa]" name="endTest" is-config="true" duration-ms="1502" started-at="2017-06-26T23:22:13Z" finished-at="2017-06-26T23:22:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.info.TestBase.TestBase -->
+      </class> <!-- com.info.TestRunner.MainTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

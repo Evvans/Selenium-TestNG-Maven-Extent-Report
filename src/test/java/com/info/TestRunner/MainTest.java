@@ -16,6 +16,7 @@ import com.info.pages.NewYahoopage;
 import com.info.pages.Payment;
 import com.info.TestBase.TestBase;
 import com.info.pages.Registration;
+import com.relevantcodes.extentreports.LogStatus;
 
 
 public class MainTest extends TestBase{
@@ -33,8 +34,8 @@ public class MainTest extends TestBase{
 	@Test
 	public void customer_Registraion()
 	{
-		//test=report.startTest("Customer Registration");
-		//test.log(LogStatus.INFO, "Test Started"+test.getStartedTime());
+		test=report.startTest("Customer Registration");
+		test.log(LogStatus.INFO, "Test Started"+test.getStartedTime());
 		//driver.findElement(By.xpath("//input[@name='first_name']")).sendKeys("Pravin");
 
 		registration.to_Fil_Customer_Registration_Details();

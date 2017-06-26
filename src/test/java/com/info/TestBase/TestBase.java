@@ -39,7 +39,7 @@ public class TestBase {
 			TakesScreenshot tc = (TakesScreenshot) driver;
 			File src = tc.getScreenshotAs(OutputType.FILE);
 
-			dest = "E:\\GIT_Project\\ExtentReport_Demo\\Screenshot\\" + time + ".png"; 
+			dest = "E:\\StudyWorkpace\\ExtentReport_Demo\\Screenshot\\" + time + ".png"; 
 			File destination = new File(dest);
 			FileUtils.copyFile(src, destination);
 			System.out.println("image destination" + dest);
@@ -58,8 +58,8 @@ public class TestBase {
 	{
 		try
 		{
-			
-			report=new ExtentReports("E://GIT_Project//ExtentReport_Demo//ExtentReport//Report.html",true);
+		
+			report=new ExtentReports("E://StudyWorkpace//ExtentReport_Demo//ExtentReport//Report.html",true);
 			//report=new ExtentReports("E://GIT_Project//TestNG_ExtentReport_Maven//ExtentReport//Report"+System.currentTimeMillis()+".html",true);
 			report.addSystemInfo("HostName", "Pravin")
 			.addSystemInfo("Environment", "SIT")
