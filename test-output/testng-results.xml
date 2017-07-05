@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8852" started-at="2017-06-26T17:25:34Z" finished-at="2017-06-26T17:25:42Z">
+  <suite name="Default suite" duration-ms="27678" started-at="2017-07-05T17:23:19Z" finished-at="2017-07-05T17:23:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8852" started-at="2017-06-26T17:25:34Z" finished-at="2017-06-26T17:25:42Z">
+    <test name="Default test" duration-ms="27678" started-at="2017-07-05T17:23:19Z" finished-at="2017-07-05T17:23:46Z">
       <class name="com.info.TestRunner.MainTest">
-        <test-method status="PASS" signature="Reportsetup()[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="Reportsetup" is-config="true" duration-ms="2888" started-at="2017-06-26T22:54:49Z" finished-at="2017-06-26T22:54:52Z">
+        <test-method status="PASS" signature="Reportsetup()[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="Reportsetup" is-config="true" duration-ms="2308" started-at="2017-07-05T22:52:40Z" finished-at="2017-07-05T22:52:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Reportsetup -->
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="launchApp" is-config="true" duration-ms="41762" started-at="2017-06-26T22:54:52Z" depends-on-methods="com.info.TestBase.TestBase.Reportsetup" finished-at="2017-06-26T22:55:34Z">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="launchApp" is-config="true" duration-ms="36414" started-at="2017-07-05T22:52:42Z" depends-on-methods="com.info.TestBase.TestBase.Reportsetup" finished-at="2017-07-05T22:53:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="customer_Registraion()[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="customer_Registraion" duration-ms="6688" started-at="2017-06-26T22:55:34Z" finished-at="2017-06-26T22:55:40Z">
+        <test-method status="PASS" signature="customer_Registraion()[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="customer_Registraion" duration-ms="17478" started-at="2017-07-05T22:53:19Z" finished-at="2017-07-05T22:53:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_Registraion -->
-        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="getReport" is-config="true" duration-ms="693" started-at="2017-06-26T22:55:40Z" finished-at="2017-06-26T22:55:41Z">
+        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="getReport" is-config="true" duration-ms="787" started-at="2017-07-05T22:53:36Z" finished-at="2017-07-05T22:53:37Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReport -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="endTest" is-config="true" duration-ms="1398" started-at="2017-06-26T22:55:41Z" finished-at="2017-06-26T22:55:42Z">
+        <test-method status="PASS" signature="customer_Payment()[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="customer_Payment" duration-ms="6752" started-at="2017-07-05T22:53:37Z" finished-at="2017-07-05T22:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_Payment -->
+        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="getReport" is-config="true" duration-ms="582" started-at="2017-07-05T22:53:44Z" finished-at="2017-07-05T22:53:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_Payment status=SUCCESS method=MainTest.customer_Payment()[pri:0, instance:com.info.TestRunner.MainTest@1efef64] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReport -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.info.TestRunner.MainTest@1efef64]" name="endTest" is-config="true" duration-ms="1877" started-at="2017-07-05T22:53:44Z" finished-at="2017-07-05T22:53:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- com.info.TestRunner.MainTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

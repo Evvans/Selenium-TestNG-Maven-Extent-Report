@@ -8,7 +8,11 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class Payment {
+import com.info.TestBase.TestBase;
+import com.relevantcodes.extentreports.LogStatus;
+import com.relevantcodes.extentreports.model.Test;
+
+public class Payment extends TestBase{
 	
 	
 	WebDriver driver;
@@ -53,6 +57,7 @@ public class Payment {
 	
 	
 	
+	
 	public void to_Fill_Payment_Details()
 	{
 	
@@ -69,8 +74,6 @@ public class Payment {
 		Username.sendKeys("Sacchin");
 		Password.sendKeys("Kight");
 		btn_submit.click();
-		
-		
 		
 		to_verify_Payment();
 		
@@ -89,12 +92,14 @@ public class Payment {
 			System.out.println("Successful transfer");
 			btn_OK.click();
 			Assert.assertTrue(true, "Amout Transfer");
+			test.log(LogStatus.PASS," Payment Amount successfuly transfer");
 			return true;
 		}
 		else
 		{
 			System.out.println("Issue with transfer");
 			Assert.assertTrue(false, "Issue with Amout Transfer");
+			test.log(LogStatus.FAIL, "Issue with payment transfer");
 			return false;
 		}
 		
