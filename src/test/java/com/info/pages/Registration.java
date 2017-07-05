@@ -64,17 +64,26 @@ public class Registration extends TestBase{
 		test.log(LogStatus.INFO, "User hasSelect Title");
 		
 		System.out.println("In method");
-		first_name1.sendKeys("Pravin");
-		last_name.sendKeys("Kale");
-		email_id.sendKeys("pravin@gmail.com");
-		phone_no.sendKeys("9878786546");
-		address.sendKeys("Aundh,Pune");
-		city.sendKeys("Pune");
+		first_name1.sendKeys(fname);
+		test.log(LogStatus.INFO, "User has enter first name As :"+fname);
+		last_name.sendKeys(lname);
+		test.log(LogStatus.INFO, "User has enter Last name As :"+lname);
+		email_id.sendKeys(email);
+		test.log(LogStatus.INFO, "User has enter email As :"+email);
+		phone_no.sendKeys(mobile);
+		test.log(LogStatus.INFO, "User has enter Mobile As :"+mobile);
+		address.sendKeys(area_address);
+		test.log(LogStatus.INFO, "User has enter Area address As :"+area_address);
+		city.sendKeys(cityname);
+		test.log(LogStatus.INFO, "User has enter City As :"+cityname);
 		Select s2=new Select(state);
 		s2.selectByIndex(3);
-		zipcode.sendKeys("431234");
-		username.sendKeys("Pravin");
-		password.sendKeys("Kale");
+		zipcode.sendKeys(pincode);
+		test.log(LogStatus.INFO, "User has enter Pincode As :"+pincode);
+		username.sendKeys(uname);
+		test.log(LogStatus.INFO, "User has enter Username As :"+uname);
+		password.sendKeys(upassword);
+		test.log(LogStatus.INFO, "User has enter password As :"+upassword);
 		comments.sendKeys("don't having credit card");
 		
 		
