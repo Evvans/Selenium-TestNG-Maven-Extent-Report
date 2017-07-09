@@ -5,11 +5,10 @@
     <classes>
       <class name="com.info.TestRunner.MainTest">
         <methods>
-          <include name="customer_Payment"/>
+          <include name="customer_Registraion"/>
           <include name="Reportsetup"/>
           <include name="launchApp"/>
           <include name="endTest"/>
-          <include name="getReport"/>
         </methods>
       </class> <!-- com.info.TestRunner.MainTest -->
     </classes>

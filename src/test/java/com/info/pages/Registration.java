@@ -63,7 +63,7 @@ public class Registration extends TestBase{
 		s1.selectByIndex(2);
 		test.log(LogStatus.INFO, "User hasSelect Title");
 		
-		System.out.println("In method");
+		//System.out.println("In method");
 		first_name1.sendKeys(fname);
 		test.log(LogStatus.INFO, "User has enter first name As :"+fname);
 		last_name.sendKeys(lname);
@@ -89,7 +89,7 @@ public class Registration extends TestBase{
 		
 		List<WebElement> rdBtn = driver.findElements(Credit);	
 		boolean svalue=rdBtn.get(0).isSelected();
-		System.out.println("Value of"+svalue);
+		//System.out.println("Value of"+svalue);
 		if(!svalue==true)
 		{	
 		rdBtn.get(0).click();	
@@ -100,13 +100,13 @@ public class Registration extends TestBase{
 		{
 			btn_submit.click();	
 			Assert.assertTrue(true, "Submit button is enable on page");
-			test.log(LogStatus.PASS, "Submit button is enable on page");
+			//test.log(LogStatus.PASS, "Submit button is enable on page");
 			return true;
 		}
 		else
 		{
 			Assert.assertTrue(false, "Submit button is not enable on page");
-			test.log(LogStatus.FAIL, "Submit button is not enable on page");
+			//test.log(LogStatus.FAIL, "Submit button is not enable on page");
 			return false;
 		}
 		

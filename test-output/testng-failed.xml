@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="upassword" value="Pune"/>
+    <parameter name="fname" value="aniket"/>
+    <parameter name="pincode" value="414502"/>
+    <parameter name="uname" value="Aniket"/>
+    <parameter name="cityname" value="Pune"/>
+    <parameter name="mobile" value="9898989898"/>
+    <parameter name="DestAc" value="3234566"/>
+    <parameter name="title" value="Mrs"/>
+    <parameter name="AmountTrans" value="12000"/>
+    <parameter name="lname" value="Sharma"/>
+    <parameter name="area_address" value="Aundh"/>
+    <parameter name="State" value="Maharastra"/>
+    <parameter name="name" value="Pravin"/>
+    <parameter name="email" value="asharma@gmail.com"/>
+    <parameter name="SorceAc" value="32534455"/>
     <classes>
       <class name="com.info.TestRunner.MainTest">
         <methods>
-          <include name="customer_Payment"/>
+          <include name="customer_Payment" invocation-numbers="0"/>
           <include name="Reportsetup"/>
           <include name="launchApp"/>
           <include name="endTest"/>
@@ -13,5 +28,5 @@
         </methods>
       </class> <!-- com.info.TestRunner.MainTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

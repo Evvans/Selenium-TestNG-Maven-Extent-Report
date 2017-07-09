@@ -58,7 +58,7 @@ public class Payment extends TestBase{
 	
 	
 	
-	public void to_Fill_Payment_Details()
+	public void to_Fill_Payment_Details(String name,String SorceAc,String DestAc,String AmountTrans,String uname,String upassword)
 	{
 	
 		Select s_bank=new Select(source_bank);
@@ -67,12 +67,18 @@ public class Payment extends TestBase{
 		Select d_bank=new Select(Dest_bank);
 		d_bank.selectByIndex(3);
 		
-		Cust_Name.sendKeys("Sachin Sharma");
-		Source_Acc.sendKeys("5057857487");
-		Dest_Acc.sendKeys("5095898594");
-		Amount.sendKeys("5000");
-		Username.sendKeys("Sacchin");
-		Password.sendKeys("Kight");
+		Cust_Name.sendKeys(name);
+		test.log(LogStatus.INFO, "Customer has enter Customer Name as"+name);
+		Source_Acc.sendKeys(SorceAc);
+		test.log(LogStatus.INFO, "Customer has Source Ac no  as"+name);
+		Dest_Acc.sendKeys(DestAc);
+		test.log(LogStatus.INFO, "Customer has SourDestination Ac no  as"+name);
+		Amount.sendKeys(AmountTrans);
+		test.log(LogStatus.INFO, "Customer has enter amount as"+name);
+		Username.sendKeys(uname);
+		test.log(LogStatus.INFO, "Customer has username as"+uname);
+		Password.sendKeys(upassword);
+		test.log(LogStatus.INFO, "Customer has enter Paswsowrd as"+upassword);
 		btn_submit.click();
 		
 		to_verify_Payment();
@@ -82,14 +88,14 @@ public class Payment extends TestBase{
 	public boolean to_verify_Payment()
 	{
 		for (String handle1 : driver.getWindowHandles()) {
-			System.out.println(handle1);
+			//System.out.println(handle1);
 			driver.switchTo().window(handle1);
 		}
 		String text=msg.getText();
 		System.out.println("Messag eis"+text);
 		if(text.contains("Transfer"))
 		{
-			System.out.println("Successful transfer");
+			//System.out.println("Successful transfer");
 			btn_OK.click();
 			Assert.assertTrue(true, "Amout Transfer");
 			test.log(LogStatus.PASS," Payment Amount successfuly transfer");

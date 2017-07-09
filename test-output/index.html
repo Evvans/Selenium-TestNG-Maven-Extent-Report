@@ -2,9 +2,10 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -101,12 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.info.TestRunner.MainTest" hash-for-method="customer_Payment">customer_Payment</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.info.TestRunner.MainTest" hash-for-method="customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune)">customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.info.TestRunner.MainTest" hash-for-method="customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, sharma)">customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, sharma)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.info.TestRunner.MainTest" hash-for-method="customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune)">customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -129,17 +130,22 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="customer_Payment">
-                  </a> <!-- customer_Payment -->
+                  <a name="customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune)">
+                  </a> <!-- customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune) -->
                   <span class="method-name">customer_Payment</span>
+                  <span class="parameters">(Pravin, 32534455, 3234566, 12000, Aniket, Pune)</span>
+                  <em>
+(This Test case will perform Customer peayment)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, sharma)">
-                  </a> <!-- customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, sharma) -->
+                  <a name="customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune)">
+                  </a> <!-- customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune) -->
                   <span class="method-name">customer_Registraion</span>
-                  <span class="parameters">(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, sharma)</span>
+                  <span class="parameters">(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune)</span>
+                  <em>
+(This test case will perform Customer Registration)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -153,19 +159,26 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.info.TestRunner.Listner&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;upassword&quot; value=&quot;sharma&quot;/&gt;
+    &lt;parameter name=&quot;upassword&quot; value=&quot;Pune&quot;/&gt;
     &lt;parameter name=&quot;fname&quot; value=&quot;aniket&quot;/&gt;
     &lt;parameter name=&quot;pincode&quot; value=&quot;414502&quot;/&gt;
-    &lt;parameter name=&quot;lname&quot; value=&quot;Sharma&quot;/&gt;
-    &lt;parameter name=&quot;area_address&quot; value=&quot;Aundh&quot;/&gt;
     &lt;parameter name=&quot;uname&quot; value=&quot;Aniket&quot;/&gt;
-    &lt;parameter name=&quot;State&quot; value=&quot;Maharastra&quot;/&gt;
     &lt;parameter name=&quot;cityname&quot; value=&quot;Pune&quot;/&gt;
     &lt;parameter name=&quot;mobile&quot; value=&quot;9898989898&quot;/&gt;
+    &lt;parameter name=&quot;DestAc&quot; value=&quot;3234566&quot;/&gt;
     &lt;parameter name=&quot;title&quot; value=&quot;Mrs&quot;/&gt;
+    &lt;parameter name=&quot;AmountTrans&quot; value=&quot;12000&quot;/&gt;
+    &lt;parameter name=&quot;lname&quot; value=&quot;Sharma&quot;/&gt;
+    &lt;parameter name=&quot;area_address&quot; value=&quot;Aundh&quot;/&gt;
+    &lt;parameter name=&quot;State&quot; value=&quot;Maharastra&quot;/&gt;
+    &lt;parameter name=&quot;name&quot; value=&quot;Pravin&quot;/&gt;
     &lt;parameter name=&quot;email&quot; value=&quot;asharma@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;SorceAc&quot; value=&quot;32534455&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.info.TestRunner.MainTest&quot;/&gt;
     &lt;/classes&gt;
@@ -211,16 +224,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'customer_Registraion')
 data.setCell(0, 2, 'com.info.TestRunner.MainTest')
-data.setCell(0, 3, 17038);
+data.setCell(0, 3, 8833);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'customer_Payment')
 data.setCell(1, 2, 'com.info.TestRunner.MainTest')
-data.setCell(1, 3, 5969);
+data.setCell(1, 3, 2187);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -248,32 +261,32 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.info.TestRunner.MainTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">Reportsetup</span>
+                <span class="method-name">launchApp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-suite before">
-                <span class="method-name">launchApp</span>
-                <span class="method-start">1556 ms</span>
-              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">Reportsetup</span>
+                <span class="method-start">16015 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, sharma)</span>
-                <span class="method-start">32312 ms</span>
+                <span class="method-name">customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune)</span>
+                <span class="method-start">16562 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getReport([TestResult name=customer_Registraion status=SUCCESS method=MainTest.customer_Registraion(java.lang....)</span>
-                <span class="method-start">49356 ms</span>
+                <span class="method-start">25397 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">customer_Payment</span>
-                <span class="method-start">50225 ms</span>
+                <span class="method-name">customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune)</span>
+                <span class="method-start">25689 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getReport([TestResult name=customer_Payment status=SUCCESS method=MainTest.customer_Payment()[pri:0, instance:...)</span>
-                <span class="method-start">56199 ms</span>
+                <span class="method-name">getReport([TestResult name=customer_Payment status=SUCCESS method=MainTest.customer_Payment(java.lang.String, ...)</span>
+                <span class="method-start">27878 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">56830 ms</span>
+                <span class="method-start">28088 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

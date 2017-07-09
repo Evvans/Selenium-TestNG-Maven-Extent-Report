@@ -15,7 +15,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
-
+import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -33,16 +33,16 @@ public class TestBase {
 		try {
 			DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HHmmss");
 			Date date = new Date();
-			System.out.println(dateFormat.format(date)); // 2016/11/16 12:08:43
+			//System.out.println(dateFormat.format(date)); // 2016/11/16 12:08:43
 			time = dateFormat.format(date);
-			System.out.println("Time is" + time);
+			//System.out.println("Time is" + time);
 			TakesScreenshot tc = (TakesScreenshot) driver;
 			File src = tc.getScreenshotAs(OutputType.FILE);
 
 			dest = "E:\\StudyWorkpace\\ExtentReport_Demo\\Screenshot\\" + time + ".png"; 
 			File destination = new File(dest);
 			FileUtils.copyFile(src, destination);
-			System.out.println("image destination" + dest);
+			//System.out.println("image destination" + dest);
 			System.out.println("Screen shot taken");
 
 			// return dest;
@@ -52,8 +52,7 @@ public class TestBase {
 		return dest;
 	}
 	
-	
-	@BeforeSuite
+	@BeforeTest
 	public void Reportsetup()
 	{
 		try

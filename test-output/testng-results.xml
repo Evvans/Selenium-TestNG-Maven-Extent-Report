@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="26201" started-at="2017-07-05T17:49:59Z" finished-at="2017-07-05T17:50:25Z">
+  <suite name="Suite" duration-ms="12637" started-at="2017-07-09T14:22:46Z" finished-at="2017-07-09T14:22:58Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="26201" started-at="2017-07-05T17:49:59Z" finished-at="2017-07-05T17:50:25Z">
+    <test name="Test" duration-ms="12637" started-at="2017-07-09T14:22:46Z" finished-at="2017-07-09T14:22:58Z">
       <class name="com.info.TestRunner.MainTest">
-        <test-method status="PASS" signature="Reportsetup()[pri:0, instance:com.info.TestRunner.MainTest@a3ffec]" name="Reportsetup" is-config="true" duration-ms="1556" started-at="2017-07-05T23:19:27Z" finished-at="2017-07-05T23:19:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Reportsetup -->
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.info.TestRunner.MainTest@a3ffec]" name="launchApp" is-config="true" duration-ms="30693" started-at="2017-07-05T23:19:28Z" depends-on-methods="com.info.TestBase.TestBase.Reportsetup" finished-at="2017-07-05T23:19:59Z">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="launchApp" is-config="true" duration-ms="16008" started-at="2017-07-09T19:52:30Z" finished-at="2017-07-09T19:52:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="customer_Registraion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.info.TestRunner.MainTest@a3ffec]" name="customer_Registraion" duration-ms="17038" started-at="2017-07-05T23:19:59Z" finished-at="2017-07-05T23:20:16Z">
+        <test-method status="PASS" signature="Reportsetup()[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="Reportsetup" is-config="true" duration-ms="497" started-at="2017-07-09T19:52:46Z" finished-at="2017-07-09T19:52:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportsetup -->
+        <test-method status="PASS" signature="customer_Registraion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.info.TestRunner.MainTest@ebc39e]" name="customer_Registraion" duration-ms="8833" started-at="2017-07-09T19:52:46Z" description="This test case will perform Customer Registration" finished-at="2017-07-09T19:52:55Z">
           <params>
             <param index="0">
               <value>
@@ -69,40 +69,72 @@
             </param>
             <param index="10">
               <value>
-                <![CDATA[sharma]]>
+                <![CDATA[Pune]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_Registraion -->
-        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@a3ffec]" name="getReport" is-config="true" duration-ms="867" started-at="2017-07-05T23:20:16Z" finished-at="2017-07-05T23:20:17Z">
+        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="getReport" is-config="true" duration-ms="289" started-at="2017-07-09T19:52:55Z" finished-at="2017-07-09T19:52:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=customer_Registraion status=SUCCESS method=MainTest.customer_Registraion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.info.TestRunner.MainTest@a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=customer_Registraion status=SUCCESS method=MainTest.customer_Registraion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.info.TestRunner.MainTest@ebc39e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReport -->
-        <test-method status="PASS" signature="customer_Payment()[pri:0, instance:com.info.TestRunner.MainTest@a3ffec]" name="customer_Payment" duration-ms="5969" started-at="2017-07-05T23:20:17Z" finished-at="2017-07-05T23:20:23Z">
+        <test-method status="PASS" signature="customer_Payment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.info.TestRunner.MainTest@ebc39e]" name="customer_Payment" duration-ms="2187" started-at="2017-07-09T19:52:55Z" description="This Test case will perform Customer peayment" finished-at="2017-07-09T19:52:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pravin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[32534455]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3234566]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Aniket]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_Payment -->
-        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@a3ffec]" name="getReport" is-config="true" duration-ms="626" started-at="2017-07-05T23:20:23Z" finished-at="2017-07-05T23:20:24Z">
+        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="getReport" is-config="true" duration-ms="209" started-at="2017-07-09T19:52:58Z" finished-at="2017-07-09T19:52:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=customer_Payment status=SUCCESS method=MainTest.customer_Payment()[pri:0, instance:com.info.TestRunner.MainTest@a3ffec] output={null}]]]>
+                <![CDATA[[TestResult name=customer_Payment status=SUCCESS method=MainTest.customer_Payment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.info.TestRunner.MainTest@ebc39e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReport -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.info.TestRunner.MainTest@a3ffec]" name="endTest" is-config="true" duration-ms="1620" started-at="2017-07-05T23:20:24Z" finished-at="2017-07-05T23:20:25Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="endTest" is-config="true" duration-ms="558" started-at="2017-07-09T19:52:58Z" finished-at="2017-07-09T19:52:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
