@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12637" started-at="2017-07-09T14:22:46Z" finished-at="2017-07-09T14:22:58Z">
+  <suite name="Suite" duration-ms="18020" started-at="2017-07-09T18:14:07Z" finished-at="2017-07-09T18:14:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12637" started-at="2017-07-09T14:22:46Z" finished-at="2017-07-09T14:22:58Z">
+    <test name="Test" duration-ms="18020" started-at="2017-07-09T18:14:07Z" finished-at="2017-07-09T18:14:25Z">
       <class name="com.info.TestRunner.MainTest">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="launchApp" is-config="true" duration-ms="16008" started-at="2017-07-09T19:52:30Z" finished-at="2017-07-09T19:52:46Z">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="launchApp" is-config="true" duration-ms="24067" started-at="2017-07-09T23:43:43Z" finished-at="2017-07-09T23:44:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="Reportsetup()[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="Reportsetup" is-config="true" duration-ms="497" started-at="2017-07-09T19:52:46Z" finished-at="2017-07-09T19:52:46Z">
+        <test-method status="PASS" signature="Reportsetup()[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="Reportsetup" is-config="true" duration-ms="522" started-at="2017-07-09T23:44:07Z" finished-at="2017-07-09T23:44:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Reportsetup -->
-        <test-method status="PASS" signature="customer_Registraion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.info.TestRunner.MainTest@ebc39e]" name="customer_Registraion" duration-ms="8833" started-at="2017-07-09T19:52:46Z" description="This test case will perform Customer Registration" finished-at="2017-07-09T19:52:55Z">
+        <test-method status="PASS" signature="customer_Registraion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.info.TestRunner.MainTest@ebc39e]" name="customer_Registraion" duration-ms="10703" started-at="2017-07-09T23:44:08Z" description="This test case will perform Customer Registration" finished-at="2017-07-09T23:44:18Z">
           <params>
             <param index="0">
               <value>
@@ -76,7 +76,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_Registraion -->
-        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="getReport" is-config="true" duration-ms="289" started-at="2017-07-09T19:52:55Z" finished-at="2017-07-09T19:52:55Z">
+        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="getReport" is-config="true" duration-ms="488" started-at="2017-07-09T23:44:18Z" finished-at="2017-07-09T23:44:19Z">
           <params>
             <param index="0">
               <value>
@@ -87,7 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReport -->
-        <test-method status="PASS" signature="customer_Payment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.info.TestRunner.MainTest@ebc39e]" name="customer_Payment" duration-ms="2187" started-at="2017-07-09T19:52:55Z" description="This Test case will perform Customer peayment" finished-at="2017-07-09T19:52:58Z">
+        <test-method status="PASS" signature="customer_Payment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.info.TestRunner.MainTest@ebc39e]" name="customer_Payment" duration-ms="4602" started-at="2017-07-09T23:44:19Z" description="This Test case will perform Customer peayment" finished-at="2017-07-09T23:44:23Z">
           <params>
             <param index="0">
               <value>
@@ -123,7 +123,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_Payment -->
-        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="getReport" is-config="true" duration-ms="209" started-at="2017-07-09T19:52:58Z" finished-at="2017-07-09T19:52:58Z">
+        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="getReport" is-config="true" duration-ms="406" started-at="2017-07-09T23:44:23Z" finished-at="2017-07-09T23:44:24Z">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReport -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="endTest" is-config="true" duration-ms="558" started-at="2017-07-09T19:52:58Z" finished-at="2017-07-09T19:52:58Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.info.TestRunner.MainTest@ebc39e]" name="endTest" is-config="true" duration-ms="1135" started-at="2017-07-09T23:44:24Z" finished-at="2017-07-09T23:44:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->

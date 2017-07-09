@@ -64,7 +64,7 @@ public class TestBase {
 			.addSystemInfo("Environment", "SIT")
 			.addSystemInfo("User","Ambadas")
 			.addSystemInfo("Project Name", "Propchilli.com");
-			//report.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
+			report.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 
 			//report.setSystemInfo("HostName", "Pravin").addSystemInfo("Environment", "SIT").addSystemInfo("User", "Ambadas");	
 		}
@@ -110,7 +110,7 @@ public class TestBase {
 	public void endTest()
 	{
 		report.flush();
-		//report.close();
+		report.close();
 	}
 
 	public WebDriver startBrowser(String browsername,String url)

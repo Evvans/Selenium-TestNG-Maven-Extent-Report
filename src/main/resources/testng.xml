@@ -20,10 +20,7 @@
 		<parameter name="AmountTrans" value="12000"/>	
 		<parameter name="uname" value="Aniket"/>
 		<parameter name="upassword" value="Pune"/>
-		
-		
-		
-
+	
 		<classes>
 			<class name="com.info.TestRunner.MainTest" />
 		</classes>
