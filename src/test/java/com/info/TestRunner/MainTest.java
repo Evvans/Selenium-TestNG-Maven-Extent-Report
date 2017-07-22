@@ -44,7 +44,6 @@ public class MainTest extends TestBase{
 		test.log(LogStatus.INFO, "Test Started"+test.getStartedTime());
 		
 		registration.to_Fil_Customer_Registration_Details(title,fname, lname, email, mobile, area_address, cityname, State, pincode, uname, upassword);
-		
 			
 		}
 		catch(Exception ex)
