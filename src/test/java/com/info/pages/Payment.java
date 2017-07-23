@@ -1,6 +1,7 @@
 package com.info.pages;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,6 +22,7 @@ public class Payment extends TestBase{
 	{
 		this .driver=driver;
 	}
+	
 	
 	@FindBy(how=How.NAME,using="Source_bank")
 	WebElement source_bank;

@@ -32,6 +32,7 @@ public class MainTest extends TestBase{
 		WebDriver driver=startBrowser("Firefox", "file:///E:/StudyWorkpace/ExtentReport_Demo/HTML_Pages/Registration.html");
 		registration=PageFactory.initElements(driver, Registration.class);
 		payment=PageFactory.initElements(driver, Payment.class);
+			
 	}
 
 	@Test(priority=1,description="This test case will perform Customer Registration")

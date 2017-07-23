@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -15,7 +16,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class Registration extends TestBase{
 	
-	final WebDriver driver;
+	 WebDriver driver;
 
 	public Registration(WebDriver ldriver)
 	{
@@ -27,6 +28,7 @@ public class Registration extends TestBase{
 	
 	
 	@FindBy(xpath="//select[@name='title']")
+	@CacheLookup
 	public WebElement select_title;
 	@FindBy(xpath=".//input[@name='first_name']")
 	public WebElement first_name1;
@@ -66,22 +68,30 @@ public class Registration extends TestBase{
 		//System.out.println("In method");
 		first_name1.sendKeys(fname);
 		test.log(LogStatus.INFO, "User has enter first name As :"+fname);
+		
 		last_name.sendKeys(lname);
 		test.log(LogStatus.INFO, "User has enter Last name As :"+lname);
+		
 		email_id.sendKeys(email);
 		test.log(LogStatus.INFO, "User has enter email As :"+email);
+		
 		phone_no.sendKeys(mobile);
 		test.log(LogStatus.INFO, "User has enter Mobile As :"+mobile);
+		
 		address.sendKeys(area_address);
 		test.log(LogStatus.INFO, "User has enter Area address As :"+area_address);
+		
 		city.sendKeys(cityname);
 		test.log(LogStatus.INFO, "User has enter City As :"+cityname);
+		
 		Select s2=new Select(state);
 		s2.selectByIndex(3);
 		zipcode.sendKeys(pincode);
 		test.log(LogStatus.INFO, "User has enter Pincode As :"+pincode);
+		
 		username.sendKeys(uname);
 		test.log(LogStatus.INFO, "User has enter Username As :"+uname);
+		
 		password.sendKeys(upassword);
 		test.log(LogStatus.INFO, "User has enter password As :"+upassword);
 		comments.sendKeys("don't having credit card");
