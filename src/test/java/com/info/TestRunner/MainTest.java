@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -26,10 +27,10 @@ public class MainTest extends TestBase{
 	Registration registration ;
 	Payment payment;
 
-	@BeforeSuite
+	@BeforeClass
 	public void launchApp()
 	{	
-		WebDriver driver=startBrowser("Firefox", "file:///E:/StudyWorkpace/ExtentReport_Demo/HTML_Pages/Registration.html");
+		WebDriver driver=startBrowser("Chrome", "file:///E:/StudyWorkpace/ExtentReport_Demo/HTML_Pages/Registration.html");
 		registration=PageFactory.initElements(driver, Registration.class);
 		payment=PageFactory.initElements(driver, Payment.class);
 			

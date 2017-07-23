@@ -1,35 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.info.TestRunner.Listner"/>
-  </listeners>
-  <test name="Test(failed)">
-    <parameter name="upassword" value="Pune"/>
-    <parameter name="fname" value="aniket"/>
-    <parameter name="pincode" value="414502"/>
-    <parameter name="uname" value="Aniket"/>
-    <parameter name="cityname" value="Pune"/>
-    <parameter name="mobile" value="9898989898"/>
-    <parameter name="DestAc" value="3234566"/>
-    <parameter name="title" value="Mrs"/>
-    <parameter name="AmountTrans" value="12000"/>
-    <parameter name="lname" value="Sharma"/>
-    <parameter name="area_address" value="Aundh"/>
-    <parameter name="State" value="Maharastra"/>
-    <parameter name="name" value="Pravin"/>
-    <parameter name="email" value="asharma@gmail.com"/>
-    <parameter name="SorceAc" value="32534455"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Chrome Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.info.TestRunner.MainTest">
+      <class name="com.info.TestRunner.ParallelExecution">
         <methods>
-          <include name="customer_Payment" invocation-numbers="0"/>
-          <include name="Reportsetup"/>
-          <include name="launchApp"/>
-          <include name="endTest"/>
-          <include name="getReport"/>
+          <include name="ParallelExecution" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.info.TestRunner.MainTest -->
+      </class> <!-- com.info.TestRunner.ParallelExecution -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -66,7 +66,7 @@ public class TestBase {
 			.addSystemInfo("Project Name", "Propchilli.com");
 			report.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 
-			//report.setSystemInfo("HostName", "Pravin").addSystemInfo("Environment", "SIT").addSystemInfo("User", "Ambadas");	
+				
 		}
 		catch(Exception ex)
 		{
@@ -121,7 +121,9 @@ public class TestBase {
 		}
 		else if(browsername.equalsIgnoreCase("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "E:/StudyWorkpace/ExtentReport_Demo/Drivers/chromedriver1.exe");
+			System.setProperty("webdriver.chrome.driver", "E://StudyWorkpace//ExtentReport_Demo//Drivers//chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "E://Seleium_data//All_FireFox_version//chromedriver.exe");
+			
 			driver= new ChromeDriver();
 		}
 		
