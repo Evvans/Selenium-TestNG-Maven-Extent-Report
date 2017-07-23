@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.info.TestRunner.MainTest" hash-for-method="customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune)">customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.info.TestRunner.MainTest" hash-for-method="customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune)">customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.info.TestRunner.MainTest" hash-for-method="customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune)">customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune)</a> <!-- method navigator-link -->
@@ -131,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.info.TestRunner.MainTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,49 +134,10 @@
                   </a> <!-- customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune) -->
                   <span class="method-name">customer_Payment</span>
                   <span class="parameters">(Pravin, 32534455, 3234566, 12000, Aniket, Pune)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Source_bank&quot;}
-Command duration or timeout: 60.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;DELL&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e5e0da98-bce2-4386-9aba-581e747b51d6
-*** Element info: {Using=name, value=Source_bank}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
-	at com.info.pages.Payment.to_Fill_Payment_Details(Payment.java:64)
-	at com.info.TestRunner.MainTest.customer_Payment(MainTest.java:60)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Source_bank&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;DELL&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/vostro/AppData/Local/Temp/anonymous7015133130857922313webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/vostro/AppData/Local/Temp/anonymous7015133130857922313webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (This Test case will perform Customer peayment)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.info.TestRunner.MainTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune)">
@@ -272,16 +224,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'customer_Registraion')
 data.setCell(0, 2, 'com.info.TestRunner.MainTest')
-data.setCell(0, 3, 64548);
+data.setCell(0, 3, 7163);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'customer_Payment')
 data.setCell(1, 2, 'com.info.TestRunner.MainTest')
-data.setCell(1, 3, 60039);
+data.setCell(1, 3, 2550);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -314,29 +266,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">Reportsetup</span>
-                <span class="method-start">55839 ms</span>
+                <span class="method-start">18524 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">customer_Registraion(Mrs, aniket, Sharma, asharma@gmail.com, 9898989898, Aundh, Pune, Maharastra, 414502, Aniket, Pune)</span>
-                <span class="method-start">56842 ms</span>
+                <span class="method-start">19053 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getReport([TestResult name=customer_Registraion status=SUCCESS method=MainTest.customer_Registraion(java.lang....)</span>
-                <span class="method-start">121401 ms</span>
+                <span class="method-start">26218 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">customer_Payment(Pravin, 32534455, 3234566, 12000, Aniket, Pune)</span>
-                <span class="method-start">121964 ms</span>
+                <span class="method-start">26484 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getReport([TestResult name=customer_Payment status=FAILURE method=MainTest.customer_Payment(java.lang.String, ...)</span>
-                <span class="method-start">182039 ms</span>
+                <span class="method-name">getReport([TestResult name=customer_Payment status=SUCCESS method=MainTest.customer_Payment(java.lang.String, ...)</span>
+                <span class="method-start">29036 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">182407 ms</span>
+                <span class="method-start">29251 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

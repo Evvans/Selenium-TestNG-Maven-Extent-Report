@@ -52,7 +52,7 @@ public class MainTest extends TestBase{
 			System.out.println("Msg"+ex.getMessage());
 		}
 	}
-	@Test(priority=2,description="This Test case will perform Customer peayment")
+	@Test(priority=2,description="This Test case will perform Customer peayment",dependsOnMethods="customer_Registraion")
 	@Parameters({"name", "SorceAc", "DestAc", "AmountTrans", "uname", "upassword"})
 	public void customer_Payment(String name,String SorceAc,String DestAc,String AmountTrans,String uname,String upassword)
 	{

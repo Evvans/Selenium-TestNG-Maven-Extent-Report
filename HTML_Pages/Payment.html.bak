@@ -30,7 +30,7 @@
 				$val= document.contact_form.amount.value;
 				
 				$("#alert_button").click( function() {
-					/jAlert('Amount:-'+$val+'  is successfully Transfer', 'Payment Alert');
+					jAlert('Amount:-'+$val+'  is successfully Transfer', 'Payment Alert');
 					//alert($val);
 				});
 			});
