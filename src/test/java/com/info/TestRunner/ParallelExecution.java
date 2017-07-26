@@ -23,7 +23,7 @@ public class ParallelExecution {
 		}
 		else if(browsername.equalsIgnoreCase("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "E:/StudyWorkpace/ExtentReport_Demo/Drivers/chromedriver1.exe");
+			System.setProperty("webdriver.chrome.driver", "E://StudyWorkpace//ExtentReport_Demo//Drivers//chromedriver.exe");
 			driver= new ChromeDriver();
 		}
 		

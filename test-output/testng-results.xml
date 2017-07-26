@@ -1,53 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="1" failed="1" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18635" started-at="2017-07-23T18:11:38Z" finished-at="2017-07-23T18:11:56Z">
+  <suite name="Default suite" duration-ms="319" started-at="2017-07-25T17:26:43Z" finished-at="2017-07-25T17:26:43Z">
     <groups>
+      <group name="Sanity">
+        <method signature="Grouping.advancedSearch()[pri:3, instance:com.info.TestRunner.Grouping@3a8624]" name="advancedSearch" class="com.info.TestRunner.Grouping"/>
+        <method signature="Grouping.login()[pri:1, instance:com.info.TestRunner.Grouping@3a8624]" name="login" class="com.info.TestRunner.Grouping"/>
+        <method signature="Grouping.logout()[pri:10, instance:com.info.TestRunner.Grouping@3a8624]" name="logout" class="com.info.TestRunner.Grouping"/>
+        <method signature="Grouping.search()[pri:2, instance:com.info.TestRunner.Grouping@3a8624]" name="search" class="com.info.TestRunner.Grouping"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="Grouping.advancedSearch()[pri:3, instance:com.info.TestRunner.Grouping@3a8624]" name="advancedSearch" class="com.info.TestRunner.Grouping"/>
+        <method signature="Grouping.login()[pri:1, instance:com.info.TestRunner.Grouping@3a8624]" name="login" class="com.info.TestRunner.Grouping"/>
+        <method signature="Grouping.logout()[pri:10, instance:com.info.TestRunner.Grouping@3a8624]" name="logout" class="com.info.TestRunner.Grouping"/>
+        <method signature="Grouping.prepaidRecharge()[pri:5, instance:com.info.TestRunner.Grouping@3a8624]" name="prepaidRecharge" class="com.info.TestRunner.Grouping"/>
+        <method signature="Grouping.billPayment()[pri:4, instance:com.info.TestRunner.Grouping@3a8624]" name="billPayment" class="com.info.TestRunner.Grouping"/>
+      </group> <!-- Regression -->
     </groups>
-    <test name="Chrome Test" duration-ms="15256" started-at="2017-07-23T18:11:38Z" finished-at="2017-07-23T18:11:53Z">
-      <class name="com.info.TestRunner.ParallelExecution">
-        <test-method status="FAIL" signature="ParallelExecution(java.lang.String)[pri:0, instance:com.info.TestRunner.ParallelExecution@19c0f4a]" name="ParallelExecution" duration-ms="15164" started-at="2017-07-23T23:41:38Z" finished-at="2017-07-23T23:41:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: cannot get automation extension
-from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
-  (Session info: chrome=59.0.3071.115)
-  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.12 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DELL', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\vostro\AppData\Local\Temp\scoped_dir924_23943}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: a85bd2566492862330ecb97e715b8d45]]>
-            </message>
+    <test name="Default test" duration-ms="319" started-at="2017-07-25T17:26:43Z" finished-at="2017-07-25T17:26:43Z">
+      <class name="com.info.TestRunner.Grouping">
+        <test-method status="FAIL" signature="login()[pri:1, instance:com.info.TestRunner.Grouping@3a8624]" name="login" duration-ms="40" started-at="2017-07-25T22:56:43Z" finished-at="2017-07-25T22:56:43Z">
+          <exception class="junit.framework.AssertionFailedError">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
-from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
-  (Session info: chrome=59.0.3071.115)
-  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.12 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DELL', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\vostro\AppData\Local\Temp\scoped_dir924_23943}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: a85bd2566492862330ecb97e715b8d45
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
-	at com.info.TestRunner.ParallelExecution.ParallelExecution(ParallelExecution.java:32)
+              <![CDATA[junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at com.info.TestRunner.Grouping.login(Grouping.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,35 +41,72 @@ Session ID: a85bd2566492862330ecb97e715b8d45
 	at org.testng.TestRunner.privateRun(TestRunner.java:744)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ParallelExecution -->
-      </class> <!-- com.info.TestRunner.ParallelExecution -->
-    </test> <!-- Chrome Test -->
-    <test name="Firefox Test" duration-ms="18635" started-at="2017-07-23T18:11:38Z" finished-at="2017-07-23T18:11:56Z">
-      <class name="com.info.TestRunner.ParallelExecution">
-        <test-method status="PASS" signature="ParallelExecution(java.lang.String)[pri:0, instance:com.info.TestRunner.ParallelExecution@f777e8]" name="ParallelExecution" duration-ms="18579" started-at="2017-07-23T23:41:38Z" finished-at="2017-07-23T23:41:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="search()[pri:2, instance:com.info.TestRunner.Grouping@3a8624]" name="search" duration-ms="14" started-at="2017-07-25T22:56:43Z" finished-at="2017-07-25T22:56:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ParallelExecution -->
-      </class> <!-- com.info.TestRunner.ParallelExecution -->
-    </test> <!-- Firefox Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="advancedSearch()[pri:3, instance:com.info.TestRunner.Grouping@3a8624]" name="advancedSearch" duration-ms="8" started-at="2017-07-25T22:56:43Z" finished-at="2017-07-25T22:56:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advancedSearch -->
+        <test-method status="PASS" signature="billPayment()[pri:4, instance:com.info.TestRunner.Grouping@3a8624]" name="billPayment" duration-ms="2" started-at="2017-07-25T22:56:43Z" finished-at="2017-07-25T22:56:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billPayment -->
+        <test-method status="PASS" signature="prepaidRecharge()[pri:5, instance:com.info.TestRunner.Grouping@3a8624]" name="prepaidRecharge" duration-ms="4" started-at="2017-07-25T22:56:43Z" finished-at="2017-07-25T22:56:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepaidRecharge -->
+        <test-method status="SKIP" signature="logout()[pri:10, instance:com.info.TestRunner.Grouping@3a8624]" name="logout" duration-ms="0" started-at="2017-07-25T22:56:43Z" depends-on-methods="com.info.TestRunner.Grouping.login" finished-at="2017-07-25T22:56:43Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Grouping.logout()[pri:10, instance:com.info.TestRunner.Grouping@3a8624] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Grouping.logout()[pri:10, instance:com.info.TestRunner.Grouping@3a8624] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.info.TestRunner.Grouping -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

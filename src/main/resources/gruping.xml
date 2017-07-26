@@ -4,7 +4,8 @@
 	<test name="Test">
 		<groups>
 		<run>
-		<include name="Regression"/>
+		<include name="Sanity"/>
+		
 		</run>
 		</groups>
 		<classes>

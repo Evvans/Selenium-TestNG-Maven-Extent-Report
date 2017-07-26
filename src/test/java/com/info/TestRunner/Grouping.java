@@ -2,17 +2,19 @@ package com.info.TestRunner;
 
 import org.testng.annotations.Test;
 
+import junit.framework.Assert;
+
 public class Grouping {
 	
 	
 		  @Test (groups = { "Sanity" ,"Regression" },priority=1)
 		  public void login() {
-	
-			  System.out.println("Login Execute Successfully");
-		 
+			  
+		 Assert.assertTrue(false);
+		 System.out.println("Login Execute Successfully");
 		  }
 		 
-		  @Test (groups = { "Sanity" ,"Regression" },priority=10)
+		  @Test (groups = { "Sanity" ,"Regression" },priority=10,dependsOnMethods="login")
 		  public void logout() {
 		 
 			  System.out.println("Logout Execute Successfully");
