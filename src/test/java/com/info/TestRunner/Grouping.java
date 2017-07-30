@@ -30,7 +30,7 @@ public class Grouping {
 		  @Test (groups = { "Sanity" ,"Regression" },priority=3)
 		  public void advancedSearch() {
 		 
-			  System.out.println("advancedSearch Execute Successfully");
+			  System.out.println("advancedSearch Execute Successfully.");
 		 
 		  }
 		 
