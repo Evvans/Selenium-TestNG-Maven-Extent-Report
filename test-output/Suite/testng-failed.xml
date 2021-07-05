@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
   <listeners>
-    <listener class-name="com.info.TestRunner.Listner"/>
+    <listener class-name="com.info.TestRunner.Listener"/>
   </listeners>
   <test name="Test(failed)" parallel="methods">
     <parameter name="upassword" value="Pune"/>

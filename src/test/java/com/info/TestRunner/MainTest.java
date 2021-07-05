@@ -23,7 +23,7 @@ import com.info.pages.Registration;
 import com.relevantcodes.extentreports.LogStatus;
 
 
-//@Listeners(com.info.TestRunner.Listner.class)
+//@Listeners(com.info.TestRunner.Listener.class)
 public class MainTest extends TestBase{
 	Registration registration ;
 	Payment payment;
@@ -31,7 +31,7 @@ public class MainTest extends TestBase{
 	@BeforeClass
 	public void launchApp()
 	{	
-		WebDriver driver=startBrowser("Chrome", "file:///E:/StudyWorkpace/ExtentReport_Demo/HTML_Pages/Registration.html");
+		WebDriver driver=startBrowser("Chrome", "file:///jetbrains://idea/navigate/reference?project=Selenium-TestNG-Maven-Extent-Report&path=HTML_Pages/Registration.html");
 		registration=PageFactory.initElements(driver, Registration.class);
 		payment=PageFactory.initElements(driver, Payment.class);
 			

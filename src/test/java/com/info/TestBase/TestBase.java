@@ -28,7 +28,12 @@ public class TestBase {
 	public static ExtentReports report;
 	public static ExtentTest test;
 	WebDriver driver;
-	
+
+	public static String pathDownload = System.getProperty("user.dir") + System.getProperty("file.separator") + "download";
+	public static final String pathToFiles = System.getProperty("user.dir") + System.getProperty("file.separator")
+			+ "src" + System.getProperty("file.separator") + "test" + System.getProperty("file.separator")
+			+ "resources" + System.getProperty("file.separator") + "files";
+
 	public static String takeScreenshot(WebDriver driver) {
 		try {
 			DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HHmmss");
@@ -121,7 +126,7 @@ public class TestBase {
 		}
 		else if(browsername.equalsIgnoreCase("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "E://StudyWorkpace//ExtentReport_Demo//Drivers//chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "H://Selenium-TestNG-Maven-Extent-Report//Drivers//chromedriver.exe");
 			//System.setProperty("webdriver.chrome.driver", "E://Seleium_data//All_FireFox_version//chromedriver.exe");
 			
 			driver= new ChromeDriver();
