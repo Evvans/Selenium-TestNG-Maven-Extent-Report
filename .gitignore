@@ -1,1 +1,31 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+.iml
+.iws
+.ipr
+
+# Mac
+.DS_Store
+
+# Maven
+log/
 /target/
+*.log
+
+# TestNG
+test-output/
+*.html
+
+# Reporting
+ExtentReports/
+Logger
+.gz
+.zip
+
+# Files
+download/
